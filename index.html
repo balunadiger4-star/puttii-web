@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Puttii ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #ffd6e7, #f8c8dc, #e8c7ff);
+  overflow: hidden;
+  color: #5a2945;
+}
+
+.hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  bottom: -30px;
+  animation: float 7s linear infinite;
+  opacity: 0.6;
+  font-size: 22px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.card {
+  width: 90%;
+  max-width: 430px;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 20px 60px rgba(100,40,80,0.2);
+  border: 1px solid rgba(255,255,255,0.7);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.from {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+button {
+  border: none;
+  padding: 13px 22px;
+  margin: 7px;
+  border-radius: 30px;
+  background: #d86b9c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 8px 20px rgba(180,70,120,0.25);
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: #c65388;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.big-heart {
+  font-size: 55px;
+  margin-bottom: 15px;
+  animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.small {
+  font-size: 15px;
+  opacity: 0.75;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+  <span class="heart" style="left:10%; animation-delay:0s;">♡</span>
+  <span class="heart" style="left:25%; animation-delay:2s;">♥</span>
+  <span class="heart" style="left:45%; animation-delay:4s;">♡</span>
+  <span class="heart" style="left:65%; animation-delay:1s;">♥</span>
+  <span class="heart" style="left:85%; animation-delay:3s;">♡</span>
+</div>
+
+<div class="card">
+
+<!-- PAGE 1 -->
+
+<section id="page1">
+
+<div class="big-heart">💗</div>
+
+<h1>HII PUTTII</h1>
+
+<p>
+I made this little place<br>
+especially for you ✨
+</p>
+
+<div class="from">
+— from Balu Nadiger
+</div>
+
+<button onclick="showPage('page2')">
+Enter 💕
+</button>
+
+</section>
+
+
+<!-- PAGE 2 -->
+
+<section id="page2" class="hidden">
+
+<h2>How is life going? 🌸</h2>
+
+<p>
+Be honest with me...
+</p>
+
+<button onclick="showPage('page3')">
+Good 😊
+</button>
+
+<button onclick="showPage('page3')">
+Okay 🫶
+</button>
+
+<button onclick="showPage('page3')">
+Not so good 🥺
+</button>
+
+</section>
+
+
+<!-- PAGE 3 -->
+
+<section id="page3" class="hidden">
+
+<h2>What makes you smile? 🌷</h2>
+
+<p>
+I hope there are still<br>
+many little things that make<br>
+your heart happy. ❤️
+</p>
+
+<button onclick="showPage('page4')">
+My friends 🫶
+</button>
+
+<button onclick="showPage('page4')">
+My family ❤️
+</button>
+
+<button onclick="showPage('page4')">
+Little things ✨
+</button>
+
+</section>
+
+
+<!-- PAGE 4 -->
+
+<section id="page4" class="hidden">
+
+<div class="big-heart">🥺</div>
+
+<h2>Are you taking care of yourself?</h2>
+
+<p>
+Sometimes we get so busy<br>
+with everything around us<br>
+that we forget about ourselves.
+</p>
+
+<button onclick="showPage('page5')">
+Yes ❤️
+</button>
+
+<button onclick="showPage('page5')">
+I'll try 🥺
+</button>
+
+</section>
+
+
+<!-- PAGE 5 -->
+
+<section id="page5" class="hidden">
+
+<h2>Can I tell you something?</h2>
+
+<p>
+Something I've wanted to say<br>
+from the bottom of my heart... ❤️
+</p>
+
+<button onclick="showPage('page6')">
+Yes 💗
+</button>
+
+<button onclick="showPage('page6')">
+Tell me 👀
+</button>
+
+</section>
+
+
+<!-- PAGE 6 -->
+
+<section id="page6" class="hidden">
+
+<div class="big-heart">❤️</div>
+
+<h2>You are special to me.</h2>
+
+<p>
+Maybe I don't always know<br>
+the perfect words to say it...
+<br><br>
+but your presence means<br>
+more to me than you know.
+</p>
+
+<button onclick="showPage('page7')">
+Continue 💕
+</button>
+
+</section>
+
+
+<!-- PAGE 7 -->
+
+<section id="page7" class="hidden">
+
+<h2>Promise me one thing 🌸</h2>
+
+<p>
+No matter how difficult life gets,<br>
+please don't forget to smile.
+<br><br>
+You deserve happiness.
+</p>
+
+<button onclick="showPage('page8')">
+I promise 🥹
+</button>
+
+<button onclick="showPage('page8')">
+I'll try ❤️
+</button>
+
+</section>
+
+
+<!-- PAGE 8 -->
+
+<section id="page8" class="hidden">
+
+<div class="big-heart">🌹</div>
+
+<h2>And remember...</h2>
+
+<p>
+You never have to face everything alone.
+<br><br>
+Whenever life gets difficult,<br>
+I want you to remember<br>
+that someone is always wishing<br>
+the best for you.
+</p>
+
+<button onclick="showPage('page9')">
+One last thing 💗
+</button>
+
+</section>
+
+
+<!-- FINAL PAGE -->
+
+<section id="page9" class="hidden">
+
+<div class="big-heart">❤️</div>
+
+<h1>For You, Puttii</h1>
+
+<p>
+I will always love you. ❤️
+<br><br>
+
+Through the good days<br>
+and the difficult ones...
+<br><br>
+
+For true love, I would stand<br>
+by your side and support you.
+<br><br>
+
+I may be your idiot sometimes 😂<br>
+but my feelings for you are real.
+<br><br>
+
+Whatever happens,<br>
+I will always wish for your happiness.
+</p>
+
+<div class="from">
+Forever with a smile,<br>
+— Your idiot Balu ❤️
+</div>
+
+<p class="small">
+Made with a little HTML<br>
+and a lot of feelings. ✨
+</p>
+
+</section>
+
+</div>
+
+
+<script>
+
+function showPage(pageId) {
+
+  document.querySelectorAll("section").forEach(function(page) {
+    page.classList.add("hidden");
+  });
+
+  document.getElementById(pageId).classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
